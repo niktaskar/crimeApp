@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SafetyBuddy' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SafetyBuddy
+  pod 'Firebase/Database'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  
+  target 'SafetyBuddyTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SafetyBuddyUITests' do
+    # Pods for testing
+  end
+
+end

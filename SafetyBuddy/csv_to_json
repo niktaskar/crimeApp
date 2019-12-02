@@ -1,0 +1,39 @@
+import pandas as pd
+
+# csvList = ["October2019.CSV", "September2019.CSV", "August2019.CSV", "July2019.CSV", "June2019.CSV", "May2019.CSV"]
+csvList = ["all_parsed.csv"]
+jsonString = "[\n\t"
+for csv in csvList:
+    month = pd.read_csv(csv)
+    # print(october)
+
+    columns = month.columns
+
+    # for col in columns:
+    #     print(col)
+
+    # print(october.to_json())
+
+    numRows = month.shape[0]
+    # print(numRows)
+
+    for row in range(numRows-1):
+        jsonString += "{\n\t\t"
+        for i in range(len(columns)-1):
+            jsonString += "\""+str(columns[i])+"\": \"" + str(month[columns[i]][row])+"\",\n\t\t"
+        jsonString += "\""+str(columns[len(columns)-1])+"\": \"" + str(month[columns[len(columns)-1]][row])+"\"\n\t"
+        jsonString += "},\n\t"
+
+    jsonString += "{\n\t\t"
+    for i in range(len(columns)-1):
+        jsonString += "\""+str(columns[i])+"\": \"" + str(month[columns[i]][row])+"\",\n\t\t"
+    jsonString += "\""+str(columns[len(columns)-1])+"\": \"" + str(month[columns[len(columns)-1]][row])+"\"\n\t"
+    jsonString += "},\n"
+
+jsonString += "]"
+
+file = open("data.json", "w")
+
+file.write(jsonString)
+
+# print(jsonString)

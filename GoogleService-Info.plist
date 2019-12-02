@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>770451968079-r80eqe6cpre6mpfnn2pjpp010lkikbqd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.770451968079-r80eqe6cpre6mpfnn2pjpp010lkikbqd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCTmEvXBRecAYmRCe89ZbZdwm4yvprd2m0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>770451968079</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>cse438.SafetyBuddy</string>
+	<key>PROJECT_ID</key>
+	<string>safetybuddy-30378</string>
+	<key>STORAGE_BUCKET</key>
+	<string>safetybuddy-30378.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:770451968079:ios:39d705574f2379ea189a3a</string>
+	<key>DATABASE_URL</key>
+	<string>https://safetybuddy-30378.firebaseio.com</string>
+</dict>
+</plist>
